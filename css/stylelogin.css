@@ -1,0 +1,109 @@
+body{
+    background-image: url(../img/fondo\ para\ el\ login.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+form{
+    width: 300px;
+    height: 370px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 4px 10px 10px black;
+    border-radius: 20px;
+    font-weight: bold;
+}
+form img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+form input[type="text"]{
+    outline: 0;
+    border: 2px solid black; 
+   /* width: 70%;
+    padding: 10px;*/
+    width: 150px; /* Puedes ajustar este valor según tus necesidades */
+    height: 300x;
+}
+form input[type="password"] {
+    border: 2px solid black; 
+    width: 150px; /* Puedes ajustar este valor según tus necesidades */
+    height: 350x;
+}
+.box-visible{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form button{
+
+    outline: 0;
+    border: 0;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 250px;
+    padding: 5px;
+    transform: all .6s ease-in-out;
+    text-align: center;
+    color: #fff;
+    font: weight 500px;
+
+}
+
+form button:hover{
+    opacity: 0.75;
+}*/
+
+form button::before{
+
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+form button:active{
+    color: #000
+}
+
+form button:active:active{
+    background: transparent;
+}
+form button:hover::before{
+    opacity: 1;
+}
+
+form button ::after{
+
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #85929E ;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}

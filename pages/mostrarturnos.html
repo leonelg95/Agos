@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usuario registro</title>
+    <link rel="stylesheet" href="../css/indexusuario.css">
+</head>
+<body>
+    <nav>
+       <a href="../login.html">
+        <button>Cerrar Sesion</button>
+       </a>
+       <br><br><br>
+       <a href="indexadmin.html">
+         <button>Home</button>
+        </a>
+
+    </nav>
+    <center>
+        <!--index usuario, se hace la reserva de turnos! donde solo puedo editar y eliminar -->
+        
+        <h1>Registro De Panciente Odontologico</h1>
+        <form id="formulario">
+           <br>
+            <h3>Registrar pacientes</h3>
+            <label for="nombreyapellido"> Nombre y Apellido</label>
+            <input type="text" id="nombre" required> <!--hace que salte un cartel para que llenes los campos-->
+           <br> <br> <br>
+            <label for="dni"> Numero Dni</label>
+            <input type="number" id="dni" required>
+           <br> <br> <br>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" required>
+            <label for="telefono"> Numero Tel</label>
+            <input type="number" id="telefono" required>
+           <br> <br> <br>
+            <label for="obrasocial">Obra Social</label>
+            <input type="text" id="obrasocial" required>
+           <br> <br> <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+           <br> <br> <br>
+            <label for="fecha-hora"> Fecha y Hora del turno Asignado:</label>
+            <input type="datetime-local" id="fecha" name="fecha-hora" required>
+           <br> <br> <br>
+            <button type="button"  id="botonguardar" onclick="agregardatos()">Reservar Turnos</button>
+    
+      
+        </form>
+
+
+                 
+        <h1> Confirmacion de turno </h1>
+
+        <table id="tabla" border="1"> <!--el table se utliza para crear la fila en la tabla-->
+           <thead>  <!--contiene las filas que forman el encabezado de la tabla-->
+             
+              <tr> <!--deifine las filas dentro de la tabla-->
+                 <th> Nombre y Apellido</th> <!--representa las celdas -->
+                 <th> Dni  </th> 
+                 <th> Edad </th> 
+                 <th> Telefono </th> 
+                 <th> Obra social </th> 
+                 <th> E-mail </th> 
+                 <th> Fecha y hora turno </th> 
+                 <th> Acciones </th>
+              
+                
+              </tr>
+            </thead>
+         
+            <tbody id="cuerpoTabla"></tbody>
+         
+         
+         </table>
+    </center>
+       
+    
+
+             
+   
+        <script src="../indexusuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+#formulario{
+    font-family: Arial, sans-serif;
+    background-color: rgb(105, 238, 194);
+    margin: 10;
+    padding: 10;
+    width: 500px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+body{
+    background-image: url("../img/imagenes\ de\ fondo\ dentista\ neutro.avif");
+
+    background-size: cover; /*ajusta el tamaño de la imagen para cubrir todo el fondo*/
+    background-position: center; /*centra la imagen en el fondo*/
+  
+  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    width: 100%;
+    height:auto;
+    justify-content: center;
+    align-items: center     
+
+}
+ h1{
+    display: block;
+    text-shadow: 2px 2px 4px #000000;
+ }
+
+#botonguardar{
+    outline: 0;
+    border:0;
+    background-color: rgb(22, 19, 22);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    color:rgb(180, 217, 250);
+    font: weight 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+table,th, td{
+    table-layout: fixed;
+    background-color: rgb(207, 192, 195);
+    width: 95%;
+    border: 3px solid rgb(0, 0, 0);
+    border-collapse:collapse ;
+    color:rgb(12, 12, 12, 12, 12); 
+    font-size: 15px;
+    font-family:  Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#botonsiguiente{
+
+    outline: 0;
+    border: 0;
+    background-color: rgb(3, 3, 3); 
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    padding: 5px;
+    transition:  all .5s ease-in-out;
+    text-align: center;
+    color : #fff;
+    font: weight 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+#butEditar{
+    background-color:  rgb(194, 116, 142);
+    font-weight: bold;
+}
+
+#butEliminar{
+    background-color:  rgb(194, 116, 142);
+    font-weight: bold;
+
+}
+
+#botonmostrar{
+
+    outline: 0;
+    border: 0;
+    background-color: rgb(7, 7, 7);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    color: #fff;
+    font: weight 500px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

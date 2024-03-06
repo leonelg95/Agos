@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicie Sesion</title>
+    <link rel="stylesheet" href="./css/stylelogin.css">
+</head>
+<body>         <!--el alt es un atributo, que me mostrara en caso que no se cargue la imagen el texto que aparece ahi-->
+    <form >    <!--el scf indica que imagen va a cagar, osea la url--> <!--al coloca ./estamos llamdando al archivo donde contiene la imagen-->
+        <img src="./img/iconoUsuarioColor.png" alt="Icono de imagen usuario">
+        <label for="username">Usuario</label>
+        <input type="text" id="Input-usuario" placeholder="Usuario " required>
+        <label for="password">Contraseña</label>
+        <input type="password" id="Input-contraseña" placeholder="Contraseña" required >
+        <div class="box-visible"> <!--se utiliza para crear secciones o divisiones-->
+         <input type="checkbox" id="visible">    <!--elbox-visible se utiliza para aplicar estilos-->
+            <label for="visible"> Mostrar Contraseña</label>
+        </div> 
+        <button type="button" id="btn"> Inicie Sesion</button> <!--es el boton que envia al formulario al hacer click-->          
+    </form>
+
+    <script src="login.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clienta</title>
+    <link rel="stylesheet" href="../css/styleadmin2.css">
+</head>
+<body>
+    <nav>
+        <a href="../login.html">
+         <button>Cerrar Sesion</button>
+        </a>
+        <br><br><br>
+        <a href="indexadmin.html">
+          <button>Home</button>
+         </a>
+ 
+     </nav>
+    <br>
+    <div class="container">
+        <h1>Historia Clínica</h1>
+        <form id="clinicaForm">
+            <label for="nombre">Nombre:</label><!--el atributo for y la etiqueta label, se utiliza para conectar la etiqueta con un campo de entrada especifico -->
+            <input type="text" id="nombre" name="nombre" required> <!-- el input es un dato de entrada , y el type: es donde elegimos con que tipo de dato vamos en el campo vamos a crear si numero, texto, email.etc..-->
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required> <!--el ID es un tipo de identificador que se utiliza en el javas para convertir en variable, y luego es tengan un valor-->                                                                        <!--el NAME: es otro tipo de indentifcador que se utliza en el PHP-->    
+                                                               <!--el REQUIRED  hace que te salte un cartel donde te informa que debes llenar los campos-->                                                                                                                 
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="patologia">Patología:</label>
+            <input type="text" id="patologia" name="patologia" required>
+
+            <label for="estudios">Estudios Realizados:</label>
+            <textarea id="estudios" name="estudios" required></textarea>
+
+            <label for="fechaConsulta">Fecha de Consulta:</label>
+            <input type="text" id="fechaConsulta" name="fechaConsulta">
+
+
+            <button type="button" id="guardar" onclick="guardarRegistro()">Guardar</button>
+        </form>
+    
+       <!--el onclick se utiliza para ejecutar un scrip en javas cuand  hace click en un elemento especifico de la pagina -->
+    <table id="tablaRegistros"> <!--se utiliza para crear la tabla-->
+           <thead> <!--se utliza para definir cuantas filas iran en el encabezado-->
+                <tr> <!--define las filas dentro de la tabla-->
+                    <th>Nombre</th> <!-- representa el encabezado de la tabla?-->
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Dirección</th>
+                    <th>Patología</th>
+                    <th>Estudios Realizados</th>
+                    <th>Fecha de consulta</th>
+                    <th></th>
+                    <th></th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tbodyRegistros">
+                <!-- Aquí se mostrarán los registros existentes -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="../indexadmin2.js"> </script>
+</body>
+</html>
